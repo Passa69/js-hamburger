@@ -1,9 +1,15 @@
-const element = document.querySelector("a.close");
+const menu = document.querySelector("div.hamburger-menu");
+const closeButton = document.querySelector("a.close");
+const openButton = document.querySelector(".header-right > a");
 
-element.addEventListener (`click`, 
-
+openButton.addEventListener(`click`, 
     function () {
-        
+        menu.classList.add('active');
     }
+);
 
+closeButton.addEventListener(`click`, 
+    function () {
+        menu.classList.remove('active');
+    }
 );
